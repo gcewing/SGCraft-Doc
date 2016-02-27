@@ -1,0 +1,576 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html><head>
+<meta content="text/html; charset=utf-8" http-equiv="content-type" /><title>SG Craft</title><style type="text/css">
+.jinja2 {
+  font-family: "Courier New",Courier,monospace;
+  color: #990000;
+}
+
+</style></head><body>
+<h1>Greg's SG Craft<br />
+</h1>
+
+This is a mod for the game <a href="http://www.minecraft.net/">Minecraft</a>.
+Currently it gives you SG-1 style stargates. In the future, it may
+include other things from the SG-1 universe.<br />
+<h2><a class="mozTocH2" name="mozTocId876335"></a>Contents</h2>
+<ul id="mozToc">
+<!--mozToc h2 2 h3 3 h4 4 h5 5 h6 6-->
+<li><a href="#mozTocId26922">Prerequisites</a></li>
+<li><a href="#mozTocId552632">Download</a></li>
+<li><a href="#Installation">Installation</a></li>
+<li><a href="#mozTocId861098">Usage</a></li>
+<ul>
+</ul>
+<li><a href="#mozTocId598776">Source</a></li>
+<li><a href="#mozTocId562636">Licence</a></li>
+<li><a href="#mozTocId959809">Contacting the Author</a></li>
+<li><a href="#mozTocId153908">Change History</a></li>
+<li><a href="#mozTocId566427">Old Versions</a></li>
+</ul>
+<h2><a class="mozTocH2" name="mozTocId26922"></a>Prerequisites</h2>
+
+This is a Forge-based mod, so if you haven't done so
+already, you will need to install Forge. See the Download
+section below for recommended versions. The contents of the downloaded
+zip files for these needs to be copied into your minecraft.jar file.<br />
+<h2><a class="mozTocH2" name="mozTocId552632"></a>Download</h2>
+
+SG Craft has been tested with the following versions of
+Minecraft and Forge. It may or may not work with other versions.<br />
+<br />
+<table border="1" cellpadding="3" cellspacing="0">
+<tbody>
+<tr>
+<td colspan="1" rowspan="2" style="vertical-align: top;"><b>Minecraft Version</b></td>
+<td colspan="1" rowspan="2" style="vertical-align: top;"><span style="font-weight: bold;">SG Craft</span><br />
+</td>
+<td colspan="1" rowspan="2" style="vertical-align: top;"><span style="font-weight: bold;">Documentation</span><br />
+</td>
+<td colspan="1" rowspan="2" style="vertical-align: top;"><b>Forge Version<br />
+</b></td>
+<td colspan="3" rowspan="1" style="vertical-align: top; font-weight: bold; text-align: center;">Tested with<br />
+</td>
+</tr>
+<tr>
+<td style="vertical-align: top;"><span style="font-weight: bold;">IC2</span><br />
+</td>
+<td style="vertical-align: top;"><span style="font-weight: bold;">Computer Craft</span><br />
+</td><td style="vertical-align: top; font-weight: bold;">Open Computers<br />
+</td>
+</tr>
+<tr>
+<td style="vertical-align: top;">1.4.6<br />
+</td>
+<td colspan="1" rowspan="2" style="vertical-align: middle;"><a href="http://www.cosc.canterbury.ac.nz/greg.ewing/minecraft/mods/SGCraft/download/SGCraft-0.2.0-mc1.4.6.jar">SGCraft-0.2.0-mc1.4.6.jar</a></td>
+<td colspan="1" rowspan="2"><a href="http://www.cosc.canterbury.ac.nz/greg.ewing/minecraft/mods/SGCraft/download/SGCraft-0.2.0-Doc.zip">SGCraft-0.2.0-Doc.zip</a></td>
+<td style="vertical-align: top;"><a href="http://www.minecraftforge.net/forum/index.php/topic,4175.0.html">6.5.0</a></td>
+<td style="vertical-align: top;"><br />
+</td>
+<td style="vertical-align: top;"><br />
+</td><td style="vertical-align: top;"><br />
+</td>
+</tr>
+<tr>
+<td style="vertical-align: top;">1.4.7</td>
+<td style="vertical-align: top;"><a href="http://www.minecraftforge.net/forum/index.php/topic,4804.0.html">6.6.0</a><br />
+</td>
+<td style="vertical-align: top;"><br />
+</td>
+<td style="vertical-align: top;"><br />
+</td><td style="vertical-align: top;"><br />
+</td>
+</tr>
+<tr>
+<td style="vertical-align: top;">1.5.1<br />
+</td>
+<td colspan="1" rowspan="2" style="vertical-align: middle;"><a href="http://www.cosc.canterbury.ac.nz/greg.ewing/minecraft/mods/SGCraft/download/SGCraft-0.5.2-mc1.5.1.jar">SGCraft-0.5.2-mc1.5.1.jar</a></td>
+<td colspan="1" rowspan="2"><a href="http://www.cosc.canterbury.ac.nz/greg.ewing/minecraft/mods/SGCraft/download/SGCraft-0.5.2-Doc.zip">SGCraft-0.5.2-Doc.zip</a></td>
+<td style="vertical-align: top;"><a href="http://www.minecraftforge.net/forum/index.php/topic,7053.0.html">7.7.1</a><br />
+</td>
+<td style="vertical-align: top;"><br />
+</td>
+<td style="vertical-align: top;"><br />
+</td><td style="vertical-align: top;"><br />
+</td>
+</tr>
+<tr>
+<td style="vertical-align: top;">1.5.2<br />
+</td>
+<td style="vertical-align: top;"><a href="http://www.minecraftforge.net/forum/index.php/topic,8174.0.html">7.8.0</a><br />
+</td>
+<td style="vertical-align: top;"><br />
+</td>
+<td style="vertical-align: top;"><br />
+</td><td style="vertical-align: top;"><br />
+</td>
+</tr>
+<tr>
+<td style="vertical-align: top;">1.6.2<br />
+</td>
+<td style="vertical-align: top;"><a href="http://www.cosc.canterbury.ac.nz/greg.ewing/minecraft/mods/SGCraft/download/SGCraft-0.6.0-mc1.6.2.jar">SGCraft-0.6.0-mc1.6.2.jar</a></td>
+<td style="vertical-align: top;"><a href="http://www.cosc.canterbury.ac.nz/greg.ewing/minecraft/mods/SGCraft/download/SGCraft-0.6.0-Doc.zip">SGCraft-0.6.0-Doc.zip</a></td>
+<td style="vertical-align: top;"><a href="http://www.minecraftforge.net/forum/index.php/topic,10075.0.html">9.10.0</a></td>
+<td style="vertical-align: top;"><br />
+</td>
+<td style="vertical-align: top;"><br />
+</td><td style="vertical-align: top;"><br />
+</td>
+</tr>
+<tr>
+<td style="vertical-align: top;">1.6.4<br />
+</td>
+<td style="vertical-align: top;"><a href="http://www.cosc.canterbury.ac.nz/greg.ewing/minecraft/mods/SGCraft/download/SGCraft-0.7.3-mc1.6.4.jar">SGCraft-0.7.3-mc1.6.4.jar</a></td>
+<td style="vertical-align: top;"><a href="http://www.cosc.canterbury.ac.nz/greg.ewing/minecraft/mods/SGCraft/download/SGCraft-0.7.3-Doc.zip">SGCraft-0.7.3-Doc.zip</a></td>
+<td style="vertical-align: top;"><a href="http://www.minecraftforge.net/forum/index.php/topic,12491.0.html">9.11.0</a><br />
+</td>
+<td style="vertical-align: top;"><br />
+</td>
+<td style="vertical-align: top;"><br />
+</td><td style="vertical-align: top;"><br />
+</td>
+</tr>
+<tr>
+<td style="vertical-align: top;">1.7.2<br />
+</td>
+<td colspan="1" rowspan="1"><a href="http://www.cosc.canterbury.ac.nz/greg.ewing/minecraft/mods/SGCraft/download/SGCraft-1.3.1-mc1.7.2.jar">SGCraft-1.3.1-mc1.7.2.jar</a></td>
+<td colspan="1" rowspan="1"><a href="http://www.cosc.canterbury.ac.nz/greg.ewing/minecraft/mods/SGCraft/download/SGCraft-1.3.1-Doc.zip">SGCraft-1.3.1-Doc.zip</a></td>
+<td style="vertical-align: top;"><a href="http://files.minecraftforge.net/maven/net/minecraftforge/forge/1.7.2-10.12.0.1046/forge-1.7.2-10.12.0.1046-installer.jar">10.12.0.1046</a>
+
+or later<br />
+</td>
+<td style="vertical-align: top;">2.1.425<br />
+</td>
+<td style="vertical-align: top;"><br />
+</td><td style="vertical-align: top;"><br />
+</td>
+</tr>
+<tr>
+<td colspan="1" rowspan="1" style="vertical-align: middle;">1.7.10<br />
+</td>
+<td style="vertical-align: top;"><a href="http://www.cosc.canterbury.ac.nz/greg.ewing/minecraft/mods/SGCraft/download/SGCraft-1.8.6-mc1.7.10.jar">SGCraft-1.8.6-mc1.7.10.jar</a></td>
+<td style="vertical-align: top;"><a href="http://www.cosc.canterbury.ac.nz/greg.ewing/minecraft/mods/SGCraft/download/SGCraft-1.8.6-Doc.zip">SGCraft-1.8.6-Doc.zip</a></td>
+<td colspan="1" rowspan="1"><a href="http://www.minecraftforge.net/forum/index.php/topic,21177.0.html">10.13.0</a><br />
+</td>
+<td style="vertical-align: top;" colspan="1" rowspan="1">2.2.611<br />
+</td>
+<td style="vertical-align: top;" colspan="1" rowspan="1">1.65<br />
+</td>
+<td style="vertical-align: top;">1.3.6</td>
+</tr>
+
+  
+ 
+
+<tr>
+<td style="vertical-align: top;">1.7.10<br />
+</td>
+<td style="vertical-align: top;"><a href="http://www.cosc.canterbury.ac.nz/greg.ewing/minecraft/mods/SGCraft/download/SGCraft-1.11.0-mc1.7.10.jar">SGCraft-1.11.0-mc1.7.10.jar</a><br />
+</td>
+<td style="vertical-align: top;"><a href="http://www.cosc.canterbury.ac.nz/greg.ewing/minecraft/mods/SGCraft/download/SGCraft-1.11.0-Doc.zip">SGCraft-1.11.0-Doc.zip</a><br />
+</td>
+<td style="vertical-align: top;"><a href="http://www.minecraftforge.net/forum/index.php/topic,21177.0.html">10.13.0</a><br />
+</td>
+<td style="vertical-align: top;">2.2.611<br />
+</td>
+<td style="vertical-align: top;">1.65<br />
+</td>
+<td style="vertical-align: top;">1.4.2<br />
+</td>
+</tr>
+
+  
+ 
+
+<tr>
+<td style="vertical-align: top;">1.8.9<br />
+</td>
+<td style="vertical-align: top;"><a href="http://www.cosc.canterbury.ac.nz/greg.ewing/minecraft/mods/SGCraft/download/SGCraft-1.11.0-mc1.8.9.jar">SGCraft-1.11.0-mc1.8.9.jar</a><br />
+</td>
+<td style="vertical-align: top;"><a href="http://www.cosc.canterbury.ac.nz/greg.ewing/minecraft/mods/SGCraft/download/SGCraft-1.11.0-Doc.zip">SGCraft-1.11.0-Doc.zip</a><br />
+</td>
+<td style="vertical-align: top;"><a href="http://files.minecraftforge.net/maven/net/minecraftforge/forge/index_1.8.9.html">11.15.0.1691</a><br />
+</td>
+<td style="vertical-align: top;"><br />
+</td>
+<td style="vertical-align: top;">1.78<br />
+</td>
+<td style="vertical-align: top;">1.5.22<br />
+</td>
+</tr>
+
+ 
+</tbody>
+</table>
+<h2><a name="Installation"></a>Installation<br />
+</h2>
+<table style="text-align: left; margin-left: 40px;" border="1" cellpadding="5" cellspacing="0">
+<tbody>
+<tr>
+<td style="vertical-align: top; font-weight: bold;">Forge<br />
+</td>
+<td style="vertical-align: top;">Instructions for installing
+Minecraft
+Forge: &#8226; <a href="http://www.youtube.com/watch?v=FPGlfzdIlmE&amp;feature=player_embedded">Minecraft
+1.6</a> &#8226; <a href="http://www.minecraftforge.net/wiki/Installation/Universal">Minecraft
+1.5.2 and earlier</a></td>
+</tr>
+<tr>
+<td style="vertical-align: top; font-weight: bold;">Client<br />
+</td>
+<td style="vertical-align: top;">Copy <tt>SGCraft-&lt;version&gt;.jar</tt>
+into your <tt>mods</tt>
+folder.</td>
+</tr>
+<tr>
+<td style="vertical-align: top; font-weight: bold;">Server<br />
+</td>
+<td style="vertical-align: top;">Copy <tt>SGCraft</tt><tt>-&lt;version&gt;</tt><tt>.jar</tt>
+into the server's <tt>mods</tt> folder.</td>
+</tr>
+</tbody>
+</table>
+<h2><a class="mozTocH2" name="mozTocId861098"></a>Usage</h2>
+<div style="margin-left: 40px; font-weight: bold;"><big><a href="Doc/Stargates.html">Stargates</a><br />
+<a href="Doc/IC2Integration.html">Power Units</a><br />
+<a href="Doc/ComputerCraft.html">Computer Interface</a><br />
+<a href="Doc/Recipes.html">Recipes</a><br />
+<a href="Doc/Canon.html">Compliance with SG-1 Canon</a><br />
+<a href="Doc/Configuration.html">Configuration Options</a></big></div>
+<blockquote>
+<blockquote> </blockquote>
+</blockquote>
+<h2><a class="mozTocH2" name="mozTocId598776"></a>Source</h2>
+<div style="margin-left: 40px;">For mod developers -- you don't need
+this just to use the mod.<br />
+</div>
+<br />
+<table style="text-align: left; margin-left: 40px;" border="1" cellpadding="3" cellspacing="0">
+<tbody>
+<tr>
+<td style="vertical-align: top; font-weight: bold;">Minecraft Version<br />
+</td>
+<td style="vertical-align: top; font-weight: bold;">Source<br />
+</td>
+</tr>
+
+  
+
+<tr>
+<td style="vertical-align: top;">1.7.10</td>
+<td style="vertical-align: top;"><a href="http://www.cosc.canterbury.ac.nz/greg.ewing/minecraft/mods/SGCraft/download/SGCraft-1.11.0-mc1.7.10-Source.zip">SGCraft-1.11.0-mc1.7.10-Source.zip</a><br />
+</td>
+</tr>
+
+  
+
+<tr>
+<td style="vertical-align: top;">1.8.9</td>
+<td style="vertical-align: top;"><a href="http://www.cosc.canterbury.ac.nz/greg.ewing/minecraft/mods/SGCraft/download/SGCraft-1.11.0-mc1.8.9-Source.zip">SGCraft-1.11.0-mc1.8.9-Source.zip</a><br />
+</td>
+</tr>
+
+  
+
+</tbody>
+</table>
+<blockquote style="margin-left: 80px;">
+</blockquote>
+<h2><a class="mozTocH2" name="mozTocId562636"></a>Licence</h2>
+<div style="margin-left: 40px;">This is free software. You are free to
+do whatever you want with it.<br />
+</div>
+<h2><a class="mozTocH2" name="mozTocId959809"></a>Contacting the Author</h2>
+<div style="margin-left: 40px;">You are welcome to email comments,
+suggestions and bug reports to me at:<br />
+</div>
+<blockquote style="margin-left: 80px;"><a href="mailto:greg.ewing@canterbury.ac.nz"><tt>greg.ewing@canterbury.ac.nz</tt></a><br />
+</blockquote>
+<h2><a class="mozTocH2" name="mozTocId153908"></a>Change History</h2>
+<dl style="margin-left: 40px;"><dt style="font-weight: bold;">Version 1.11.0</dt><dd>Backported to MC 1.7.10.<br />
+Stargates will now preferentially draw power from a power unit instead of using naquadah if both are available.<br />
+Generic recipe now available for RF power unit when Thermal Expansion not installed.<br />
+SG Craft items now have their own creative tab.<br />
+Computer API calls no longer raise exceptions on error, but return <span style="font-family: monospace;">nil</span>
+and an error message. This brings the API more into line with Lua
+programming conventions and avoids some incompatibilities between
+Computercraft and Open Computers concerning formatting of error
+messages. See the note on <a href="Doc/ComputerCraft.html#ErrorHandling">Error Handling</a> in the documentation for a way to adapt your existing code.<br />
+Added German language file (contributed by Timmy94W)<br />
+</dd>
+<dd>1.8.9: Computercraft and Open Computers interfaces added.<br />
+<small>Internals (1.8.9): Changed the names used for facings in the
+block states to make them more intuitive -- blocks placed when the
+player is facing north now show as oriented "north" rather than "east".
+Metadata values remain the same for compatibility with existing worlds,
+although this means they are probably different from what most vanilla
+blocks use.</small><br />
+</dd>
+<dt style="font-weight: bold;">Version 1.10.1</dt>
+<dd>Fixed generation of stargates in world.<br />
+Added config option for probability of generating stargates.<br />
+</dd>
+<dt style="font-weight: bold;">Version 1.10.0</dt>
+<dd>Core features updated for Minecraft 1.8.9.<br />
+Increased default naquadah generation rate.<br />
+</dd>
+<dt style="font-weight: bold;">Version 1.9.5</dt>
+<dd>Fixed client crash on dimension unload.<br />
+Reinstated custom death messages for iris and event horizon damage.<br />
+Removed onChunkUnload debugging messages.<br />
+</dd>
+<dt style="font-weight: bold;">Version 1.9.4</dt>
+<dd>Computer interfaces now honour the <span style="font-family: monospace;">closeFromEitherEnd</span> config setting.<br />
+If a dimension becomes unloaded, any open stargate connections to it should now be automatically closed.<br />
+Breaking a ComputerCraft stargate interface should no longer be able to crash the server.<br />
+The chunkLoadingRange config setting can now be set to -1 to prevent
+stargates from keeping any chunks loaded. However, this may result in
+undesirable effects such as connections closing immediately upon
+leaving a dimension, so use with discretion.<br />
+</dd>
+<dt style="font-weight: bold;">Version 1.9.3</dt>
+<dd>Fixed Computercraft stargate interface not working when OpenPeripheral installed.<br />
+</dd>
+<dt style="font-weight: bold;">Version 1.9.2</dt>
+<dd>Restored sending of DimensionRegisterPackets for MCPC+.<br />
+</dd>
+<dt style="font-weight: bold;">Version 1.9.1</dt>
+<dd>Fixed rendering of tooltips for charged power units in inventory.<br />
+</dd>
+<dt style="font-weight: bold;">Version 1.9.0</dt>
+<dd>Updated for Open Computers 1.4.<br />
+</dd>
+<dt style="font-weight: bold;">Version 1.8.6</dt>
+<dd>Added connection direction to return values of stargateState interface method.<br />
+
+Added a configuration option to control volume of stargate sounds.<br />
+Prevented connecting to an incomplete stargate.<br />
+Prevented connecting to an in-range stargate from an out-of-range one.</dd>
+<dd>Fixed address display in stargate gui for out-of-range gates.<br />
+Corrected list of stargate states in computer interface documentation.<br />
+</dd>
+<dt style="font-weight: bold;">Version 1.8.5</dt>
+<dd>Fixed
+spurious gate travel triggered by closing a gate while standing in
+front of it and opening it again while standing behind it.<br />
+</dd>
+<dt style="font-weight: bold;">Version 1.8.4</dt>
+<dd>Send Mystcraft age data when travelling between dimensions.<br />
+Fixed /tp command from in front of a gate spuriously triggering gate travel.<br />
+Added config option to prevent inventory destruction on iris death.<br />
+</dd>
+<dt style="font-weight: bold;">Version 1.8.3</dt>
+<dd>Fixed crash on OC network message when no item in interface upgrade slot.<br />
+</dd>
+<dt style="font-weight: bold;">Version 1.8.2</dt>
+<dd>Fixed crash on transient damage to player when Galacticraft installed.<br />
+</dd>
+<dt style="font-weight: bold;">Version 1.8.1</dt>
+<dd>Fixed items not appearing in creative menu.<br />
+</dd>
+<dt style="font-weight: bold;">Version 1.8.0</dt>
+<dd>Added sendMessage method and sgMessageReceived event.<br />
+Open Computers wireless messages pass through open stargates.<br />
+Open Computers stargate interfaces can relay wired network messages.<br />
+Iris death occurs on departure side to avoid revealing destination coordinates.<br />
+Player inventory destroyed on iris death (unless keepInventory is set).<br />
+Improved hit detection of orange button on DHD.<br />
+DHD remembers partially entered address when closed.<br />
+</dd>
+<dt style="font-weight: bold;">Version 1.7.4</dt>
+<dd>Fixed transient not being rendered when no iris or iris open.<br />
+</dd>
+<dt style="font-weight: bold;">Version 1.7.3</dt>
+<dd>Fixed incorrect chevron rendering with 7 chevron gates and base camouflage.<br />
+Event horizon now clipped by closed iris.<br />
+No transient damage when iris closed.<br />
+</dd>
+<dt style="font-weight: bold;">Version 1.7.2</dt>
+<dd>Fixed inability to craft computer interfaces when GregTech installed.<br />
+Stargate interface can now be connected to an Open Computers computer via a network cable.<br />
+</dd>
+<dt style="font-weight: bold;">Version 1.7.1</dt>
+<dd>Fixed iris not preventing player from walking through stargate.<br />
+Fixed transient not causing damage to entities.<br />
+Added iris hit sound.<br />
+Address copied to clipboard when stargate GUI is opened.<br />
+</dd>
+<dt style="font-weight: bold;">Version 1.7.0</dt>
+<dd>Added Open Computers interface.<br />
+Changed the way events are posted to computers. All fields are now
+separate arguments instead of being in a table. The name/address of the
+interface block is now passed in the event instead of the coordinates
+of the stargate.<br />
+</dd>
+<dt style="font-weight: bold;">Version 1.6.2</dt>
+<dd>Fixed NEI becoming disabled when crossing dimensions.<br />
+</dd>
+<dt style="font-weight: bold;">Version 1.6.1</dt>
+<dd>Fixed chevrons rendering in incorrect positions with base camouflage.<br />
+Fixed computer dial command causing iris to open when there is no redstone input.<br />
+Fixed energyToDial() misbehaving when given an invalid address.<br />
+Prevented dialling while a gate is already dialling or connected.<br />
+Added example programs to docs.<br />
+</dd>
+<dt style="font-weight: bold;">Version 1.6.0</dt>
+<dd>Added ComputerCraft interface.<br />
+Added base camouflage.<br />
+</dd>
+<dt style="font-weight: bold;">Version 1.5.1</dt>
+<dd>Fixed bugs in iris control.<br />
+Fixed iris/event horizon rendering problems.<br />
+</dd>
+<dt style="font-weight: bold;">Version 1.5.0</dt>
+<dd>Added Iris Upgrade.<br />
+</dd>
+<dt style="font-weight: bold;">Version 1.4.0</dt>
+<dd>Added RF Power Unit for running gates on Redstone Flux.<br />
+</dd>
+<dt style="font-weight: bold;">Version 1.3.3</dt>
+<dd>Updated for IC2 2.2.611.<br />
+Prevent crash from attempting to display an empty stargate address.<br />
+</dd>
+<dt style="font-weight: bold;">Version 1.3.2</dt>
+<dd>Updated for Minecraft 1.7.10.<br />
+</dd>
+<dt style="font-weight: bold;">Version 1.3.1</dt>
+<dd>Fixed server warnings about canUpdate.<br />
+Send DimensionRegisterMessages for MCPC+.<br />
+</dd>
+<dt style="font-weight: bold;">Version 1.3.0</dt>
+<dd>Multiple IC2 power units can now be installed under a gate to
+provide enough energy for very long-range connections.<br />
+</dd>
+<dt style="font-weight: bold;">Version 1.2.0</dt>
+<dd>Stargates in world are now generated with 9 chevrons.<br />
+Improved reliability of linking controllers with stargates.<br />
+</dd>
+<dt style="font-weight: bold;">Version 1.1.1</dt>
+<dd>Fixed problem causing all vanilla blocks to be deleted when using
+Forge 10.12.1.1060.<br />
+Disabled generation of stargates in world by default, due to
+incompatibility with some mods. Can be re-enabled with the <span style="font-family: monospace;">augmentStructures</span> config option.<br />
+Fixed <span style="font-family: monospace;">augmentStructures</span>
+having no effect.<span style="font-family: monospace;"><br />
+</span>Excluded IC2 API files from jar.<br />
+</dd>
+<dt style="font-weight: bold;">Version 1.1.0</dt>
+<dd>Added IC2 power unit.<br />
+Redstone signal emitted when gate is active.<br />
+</dd>
+<dt style="font-weight: bold;">Version 1.0.1</dt>
+<dd>Fixed name translations.<br />
+</dd>
+<dt style="font-weight: bold;">Version 1.0.0</dt>
+<dd>Updated for Minecraft 1.7.2.<br />
+New addressing scheme with 7 and 9 character addresses, 36 symbols and
+wider coordinate range including negative dimension IDs.</dd>
+<dd>Hieroglyphs replaced by constellations.<br />
+Power source moved into DHD.<br />
+Improved DHD appearance.<br />
+Idle stargate allows chunks to unload.<br />
+</dd>
+<dt style="font-weight: bold;">Version 0.7.5</dt>
+<dd>Include world name in stargate event log messages.<br />
+</dd>
+<dt style="font-weight: bold;">Version 0.7.4</dt>
+<dd>Send DimensionRegisterPackets for MCPC+.<br />
+Log stargate add/remove events to server log.</dd>
+<dt style="font-weight: bold;">Version 0.7.3</dt>
+<dd>Added naquadah generation debug options to config.<br />
+</dd>
+<dt style="font-weight: bold;">Version 0.7.2</dt>
+<dd>Fixed more transparency problems.<br />
+Fixed crash when throwing an egg through a stargate by right-clicking.<br />
+Added config option for rendering of event horizon with transparency.<br />
+</dd>
+<dt style="font-weight: bold;">Version 0.7.1</dt>
+<dd>Fixed becoming dismounted on client side when riding an entity
+through a stargate.</dd>
+<dd>Fixed chunk resets related to desert pyramid augmentation.<br />
+Fixed inconsistent rendering of event horizon with transparency.</dd>
+<dd>Event horizon now has its own texture.<br />
+Added config option to disable structure augmentation.<br />
+Added config options for explosion.<br />
+Added config option for chunk loading.<br />
+</dd>
+<dt style="font-weight: bold;">Version 0.7.0</dt>
+<dd>Updated for Minecraft 1.6.4.<br />
+Fixed data value of crystals found in chests.<br />
+Fixed crash using hopper to feed naquadah into stargate.<br />
+</dd>
+<dt style="font-weight: bold;">Version 0.6.0</dt>
+<dd>Updated for Minecraft 1.6.2.<br />
+</dd>
+<dd>Fixed problem loading sound resources when the path to the jar
+file contains a ! character.<br />
+</dd>
+<dt style="font-weight: bold;">Version 0.5.2</dt>
+<dd>Prevented chest minecarts from dumping a duplicate of their
+contents when passing through a gate.<br />
+</dd>
+<dt style="font-weight: bold;">Version 0.5.1</dt>
+<dd>Improved auto-allocation of block and item IDs to reduce chance
+of conflicts with other mods.<br />
+Prevented stargates from connecting to themselves.<br />
+</dd>
+<dt style="font-weight: bold;">Version 0.5.0</dt>
+<dd>Naquadah is rarer now, but it lasts longer as stargate fuel.<br />
+Gates stay open for a limited time.<br />
+Config options for one-way travel and single-ended closing.<br />
+Added recipe for uncrafting naquadah alloy blocks.<br />
+Fixed visual glitches when travelling between gates in same dimension.<br />
+Riding animals and vehicles through gates now works.<br />
+Arrows, potions and other projectiles now go through gates.<br />
+Minecart track can be laid inside portal area.<br />
+Gates can be built underwater.<br />
+</dd>
+<dt style="font-weight: bold;">Version 0.4.0</dt>
+<dd>Using what is hopefully a more reliable way to find and load
+dimensions.<br />
+Structure generation customisation now being done slightly differently
+to reduce chance of conflict with other mods.<br />
+Config option to disable naquadah ore generation.<br />
+Config options for controller linking range.<br />
+Naquadah is now in ore dictionary.<br />
+Crystals must now be found or bought.<br />
+</dd>
+<dt style="font-weight: bold;">Version 0.3.1</dt>
+<dd>Updated for Minecraft 1.5.2. Now using partial reobfuscation to
+better cope with changes between Minecraft versions.<br />
+Fixed: Missing textures for naquadah ore and naquadah alloy blocks.<br />
+</dd>
+<dt style="font-weight: bold;">Version 0.3</dt>
+<dd>Updated for Minecraft 1.5.1.<br />
+Stargates generated under desert pyramids.<br />
+Added a test to prevent server crash reported by some people when
+travelling to an unloaded dimension. Cannot reproduce; don't yet know
+why the dimension is not being loaded by the Forge chunk loader.<br />
+Made naquadah ore generation more efficient.<br />
+Fixed: Failure to remove tile entity when breaking a controller block.<br />
+</dd>
+<dt style="font-weight: bold;">Version 0.2</dt>
+<dd>Fixed: Stepping through stargate crashed server in multiplayer.<br />
+Fixed: Travelling from The End to another dimension did not work
+properly.</dd>
+<dd>Fixed: Shift-clicking in a stargate GUI crashed the client.</dd>
+<dd>Fixed: Breaking a chevron block dropped a plain ring block.<br />
+Naquadah can now be mined.<br />
+</dd>
+<dt><b>Version </b><span style="font-weight: bold;">0.1</span></dt>
+<dd>Initial prerelease.</dd>
+</dl>
+<dl>
+</dl>
+<h2><a class="mozTocH2" name="mozTocId566427"></a>Old Versions</h2>
+<blockquote>
+</blockquote>
+<div style="margin-left: 40px;">Previous versions can be found here:<br />
+</div>
+<br />
+<div style="margin-left: 80px;"><a href="http://www.cosc.canterbury.ac.nz/greg.ewing/minecraft/mods/SGCraft/download/"><span style="font-weight: bold;">SG Craft Downloads</span></a><br />
+</div>
+<br />
+
+---
+</body></html>

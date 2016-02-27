@@ -1,0 +1,21 @@
+--
+--   Loop reading and displaying stargate events
+--
+
+dofile("config")
+dofile("compat")
+
+print("Press q to quit")
+while true do
+  e = {pull_event()}
+  --print(e[1], e[2], e[3])
+  if e[1] == key_event_name and key_event_char(e) == "q" then
+    break
+  end
+  if string.sub(e[1], 1, 2) == "sg" then
+    print("Event:")
+    for k, v in pairs(e) do
+      print(string.format("%s %s", k, v))
+    end
+  end
+end

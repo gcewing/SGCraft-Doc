@@ -1,0 +1,11 @@
+--
+--   Configuration file used by the example programs
+--   Computercraft version
+--   Change the interface name below to suit
+--
+
+interfaceName = "stargate_1"
+sg = peripheral.wrap(interfaceName)
+if sg == nil then
+    error(interfaceName .. " not found", 0)
+end if

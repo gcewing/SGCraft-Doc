@@ -1,0 +1,14 @@
+.float-right {
+  margin-bottom: 10pt;
+  margin-left: 10pt;
+  float: right;
+}
+.notebox {
+  border-style: solid;
+  border-width: 2px;
+  padding: 25px;
+  margin-left: 50px;
+  margin-right: 50px;
+  background-color: #b2ebff;
+  border-radius: 30px;
+}
